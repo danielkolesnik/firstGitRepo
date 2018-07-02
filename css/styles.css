@@ -1,0 +1,1110 @@
+/* Hind font */
+@font-face {
+    font-family: 'Hind Light';
+    src: url(../fonts/Hind-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind Regular';
+    src: url(../fonts/Hind-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind Medium';
+    src: url(../fonts/Hind-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind Semibold';
+    src: url(../fonts/Hind-Semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hind Bold';
+    src: url(../fonts/Hind-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+/* Lora font */
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url(../fonts/Lora-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Helpfull classes */
+.blockImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border:0;
+    margin:0;
+    padding:0;
+    /* float: left; */
+}
+
+.mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33,33,33, 0.6);
+}
+
+.coverName {
+  color: rgb(179, 229, 252);
+}
+
+
+
+.pageWrapper {
+    background-color: #ffffff;
+    margin-left: 150px;
+}
+/* //////////////////////////////////// headBlock aka Content Block 01 */
+.headBlock {
+    width: 1600px;
+    height: 800px;
+    background-image: url(../img/CB1bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0;
+}
+
+.logo a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.logoPic {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.logoName {
+    position: relative;
+    left: 45px;
+    bottom: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+.menu {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    display:  flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Hind Semibold", sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.menu div {
+    padding-bottom: 13px;
+}
+
+.menu div:not(.divider):hover {
+    border-bottom: 2px solid #03a9f4;
+    padding-bottom: 11px;
+}
+
+.search a i {
+    color: white;
+}
+
+.divider {
+    padding-left: 15px;
+    padding-right: 30px;
+    font-style: normal;
+}
+
+.tabsHolder {
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    /* padding-bottom: 11px; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tab > a {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.description {
+    position: absolute;
+    bottom: 40px;
+    left: 316px;
+    right: 315px;
+    width: 969px;
+    height: 488px;
+    text-align: center;
+    color: white;
+}
+
+.headBlockText span {
+    font-family: "Hind Regular",sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.headBlockText h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.headBlockText p {
+    font-family: "Hind Regular",sans-serif;
+    font-size: 18px;
+    color: rgba(255,255,255, 0.6);
+    margin-bottom: 40px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+}
+
+.getStartedBtn a {
+    display: inline-block;
+    padding-top: 20px;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background: #03a9f4;
+    color: white;
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.getStartedBtn a:hover {
+    background-color: #ff9800;
+}
+
+.carouselBullets {
+    display: inline-block;
+    position: relative;
+    top: 209px;
+}
+
+.bullet {
+    display: inline-block;
+    /* border-radius: 1px; */
+    width: 10px;
+    height: 10px;
+    background-color: #b6b6b6;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.bullet.active {
+    background-color: #03a9f4;
+}
+
+.bullet:not(.active):hover {
+    background-color: #ff9800;
+}
+
+/* //////////////////////////////////// advantagesBlock aka Content block 02 */
+.advantagesBlock {
+    width: 1600px;
+    height: 400px;
+    display: flex;
+}
+
+.advantage {
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding-top: 40px;
+    /* padding-bottom: 30px; */
+}
+/* bgColors */
+.advantage.designBlock, .advantage.multipurposeBlock {
+    background-color: #f0fafe;
+}
+.advantage.responsiveBlock, .advantage.featuresBlock {
+    background-color: #f7fcff;
+}
+/* Empty */
+.advIcon {
+
+}
+
+.advHead {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.advIntro {
+    padding: 0 10px;
+    text-align: center;
+    font-family: "Hind Regular", sans-serif;
+    font-size: 16px;
+    color: #727272;
+    line-height: 1.9;
+}
+
+.readMore {
+    position: absolute;
+    bottom: 35px;
+    margin-top: 40px;
+    font-family: "Hind Regular", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.readMore > a {
+    color: #03a9f4;
+}
+
+.readMore > a:hover {
+    color: #ff9800;
+}
+
+/* //////////////////////////////////// portfolioBlock aka Content block 03 */
+.portfolioBlock {
+    width: 1600px;
+    height: 830px;
+    position: relative;
+}
+
+.titleSubBlock {
+    height: 300px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.portfTitle {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.portfIntro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Hind Regular", sans-serif;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    /* font-weight: bold; */
+    line-height: 2;
+}
+
+.portfTabsHolder {
+    display: inline-flex;
+    padding-left: 20px;
+}
+
+.portfTab > a {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 13px;
+    color: #03a9f4;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+}
+
+.portfTab.active > a {
+    color: #000000;
+    border-bottom: 2px solid #03a9f4;
+}
+
+.portfTab:not(.active):hover > a {
+    color: #ff9800;
+}
+/* NOT READY YET */
+.projectsSubBlock {
+    height: 400px;
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectContainer {
+    width: 25%;
+    height: 400px;
+}
+/* wrapper for medium sized project image */
+.midProject {
+    position: relative;
+}
+
+.smallProject {
+    position: relative;
+}
+
+.multiProjectContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.halfWidthProjectContainer{
+    display: flex;
+}
+/* 'Search' icon(link) for covering img's */
+.projCoverSearch {
+    display: inline-block;
+    padding: 13px;
+    width: 50px;
+    height: 50px;
+    border: 0px solid black;
+    border-radius: 3px;
+    background-color: #03a9f4;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+}
+/* 'Link' icon(link) for covering img's */
+.projCoverLink {
+    display: inline-block;
+    padding: 13px;
+    width: 50px;
+    height: 50px;
+    border: 0px solid black;
+    border-radius: 3px;
+    background-color: #ff9800;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.bigCover {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    bottom: 100%;
+    text-align: center;
+    background-color: rgba(33,33,33,0.75);
+    padding-top: 165px;
+    display: none;
+}
+
+.midCover {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgba(33,33,33,0.75);
+    padding-top: 60px;
+    display: none;
+}
+
+.midProject:hover .midCover {
+    display: block;
+}
+
+.smallCover {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0px;
+    text-align: center;
+    background-color: rgba(33,33,33,0.75);
+    padding-top: 60px;
+    display: none;
+}
+
+.smallProject:hover .smallCover {
+    display: block;
+}
+
+.projectContainer:not(.multiProjectContainer):hover .bigCover{
+    display: block;
+}
+
+
+.loadSubBlock {
+    height: 130px;
+    padding-top: 40px;
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.loadSubBlock > a {
+    color: #03a9f4;
+}
+
+.loadSubBlock a:hover {
+    color: #ff9800;
+}
+
+/* //////////////////////////////////// bridgeBlock aka Content block 04 */
+.bridgeBlock {
+    width: 1600px;
+    height: 400px;
+    position: relative;
+    background-image: url(../img/CB4bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bridgeBlock .mask {
+    background-color: rgba(33,33,33, 0.75)
+}
+
+.bridgeBlockContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 115px;
+}
+
+.bridgeBlockText {
+    font-family: "Hind Regular", sans-serif;
+    font-size: 23px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 42px;
+}
+
+.bridgeBlockContent .getStartedBtn {
+    position: relative;
+    top: 40px;
+}
+
+/* //////////////////////////////////// newsBlock aka Content block 05 */
+.newsBlock {
+    width: 1600px;
+    height: 800px;
+    position: relative;
+    padding: 70px 200px;
+}
+
+.newsTitle {
+    text-align: center;
+}
+
+.newsHeader {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.newsIntro {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: rgba(21, 21, 21, 0.75);
+    line-height: 2;
+    margin: 30px 0;
+}
+
+.newsHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.news {
+    width: 370px;
+    height: 500px;
+
+}
+
+.date {
+    margin: 40px 0;
+    font-family: "Hind Regular", sans-serif;
+    font-size: 14px;
+    color: #727272;
+    letter-spacing: 2px;
+}
+
+.newsText {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    color: #03a9f4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.newsText:hover {
+    color: #ff9800;
+}
+
+/* //////////////////////////////////// teamBlock aka Content block 06 */
+.teamBlock {
+    width: 1600px;
+    height: 800px;
+    position: relative;
+    padding: 70px 200px;
+    background-color: #f0fafe;
+}
+
+.teamTitle {
+    text-align: center;
+}
+
+.teamHeader {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.teamHolder {
+    display: flex;
+}
+
+.teammate {
+  margin: 0 15px;
+  text-align: center;
+}
+
+.teammateAvatar {
+  width: 270px;
+  height: 370px;
+  position: relative;
+}
+
+.teammateAvatar:hover .teammateCover{
+  display: block;
+}
+
+.teammateName {
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: bold; /* SEMIBOLD in font-family*/
+  margin: 30px 0 20px 0;
+}
+
+.teammatePost {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #727272;
+}
+
+.teammateCover {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  background-color: rgba(33, 33, 33, 0.75);
+  color: white;
+  display: none;
+}
+
+.teammateMessage {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+.shareBtnsHolder {
+    text-align: center;
+  position: absolute;
+  bottom: 40px;
+  width: 65%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.shareBtn {
+  display: block;
+  padding-top: 6px;
+  font-size: 13px;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  background-color: #03a9f4;
+  border: 0px solid black;
+  border-radius: 3px;
+  color: inherit;
+}
+
+.shareBtn:hover {
+  background-color: #ff9800;
+}
+
+/* /////////////////////////////////// skillsBlock aka Content Block 07 */
+.skillsBlock {
+  box-sizing: border-box;
+  width: 1600px;
+  height: 800px;
+  position: relative;
+  padding-top: 70px;
+}
+/* WHITE BACKGROUND SUBBLOCK OF SKILLS BLOCK */
+.progressSubBlock {
+  text-align: center;
+}
+/* NAME OF BLOCK */
+.skillsHeader {
+  font-family: "Hind Semibold", sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+/* SHORT TEXT INTRODUCTION */
+.skillsIntro {
+  font-family: "Hind", sans-serif;
+  font-size: 17px;
+  color: rgba(33,33,33,0.75);
+  line-height: 1.8;
+  margin: 30px 0;
+}
+/* FOR ALL PROGRESS BARS */
+.progressBarsHolder {
+  margin-top: 25px;
+  padding: 0 200px;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 100px 100px 100px;
+}
+/* ONE SKILL WITH PROGRESS BAR */
+.skill {
+  position: relative;
+  padding: 0 15px;
+  text-align: left;
+}
+
+.skillName {
+  font-family: "Hind", sans-serif; /* /\ Semibold /\ */
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.skillPercents {
+  position: absolute;
+  right: 15px;
+  font-family: "Hind", sans-serif; /* /\ Semibold /\ */
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* #b3e5fc */
+.progressBar {
+  margin-top: 10px;
+  background-color: #b3e5fc;
+  width: 570px;
+  height: 25px;
+  position: relative;
+}
+/* #03a9f4 */
+.progressBarCover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 90%;
+  background-color: #03a9f4;
+}
+
+.statsSubBlock {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  height: 240px;
+  width: 100%;
+  background-color: #ff9800;
+  padding: 80px 200px;
+  display: flex;
+  color: white;
+}
+
+.achievement {
+  display: flex;
+  width: 270px;
+  height: 75px;
+  margin: 15px;
+  font-size: 36px;
+}
+
+.achievementIcon {
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  padding-top: 17px;
+  border: 0px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: #ff9800;
+  text-align: center;
+}
+
+.achievementIntro {
+  display: block;
+  margin-top: 5px;
+  font-family: "Hind", sans-serif;
+  letter-spacing: 2px;
+  line-height: 36px;
+}
+
+.achieventName {
+  display: block;
+  font-size: 14px;
+}
+
+/* /////////////////////////////////// quotesBlock aka Content Block 08 */
+.quotesBlock {
+    width: 1600px;
+    height: 615px;
+    padding: 50px 215px;
+
+}
+
+.quotesTitle {
+    text-align: center;
+}
+
+.quotesHeader {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.quotesIntro {
+    font-family: "Hind", sans-serif;
+    font-size: 17px;
+    color: rgba(33,33,33,0.75);
+    line-height: 1.8;
+}
+
+.quotesHolder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote {
+    width: 370px;
+    text-align: center;
+}
+
+.quoteSymbol {
+    margin: 30px 0 0 0;
+    font-family: "Lora", cursive;
+    font-weight: bold;
+    font-size: 60px;
+    color: #03a9f4;
+}
+
+.quoteText {
+    font-family: "Lora", cursive;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.quoteAuthor {
+    margin-top: 30px;
+    position: relative;
+    height: 70px;
+
+}
+
+.authorAvatar {
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+.aboutAuthor {
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    display: inline-block;
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.companyName {
+    display: block;
+    margin-top: 20px;
+    font-family: "Hind Regular", sans-serif;
+    font-size: 16px;
+    color: #727272;
+    letter-spacing: normal;
+}
+
+/* /////////////////////////////////// customersBlock aka Content Block 09 */
+.customersBlock {
+    text-align: center;
+    position: relative;
+    width: 1600px;
+    height: 400px;
+    background-image: url(../img/CB9bg.png);
+    padding: 50px 330px;
+    color: white;
+}
+
+.customersTitle {
+    position: relative;
+}
+
+.customersHeader {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.customersIntro {
+    font-family: "Hind", sans-serif;
+    font-size: 17px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
+}
+
+.customersHolder {
+    width: 970px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.customer {
+    width: 170px;
+    margin-top: 40px;
+}
+
+/* /////////////////////////////////// footBlock aka Content Block 10 */
+.footBlock {
+    background-color: #212121;
+    width: 1600px;
+    height: 1000px;
+    padding: 80px 215px 0 215px;
+    color: white;
+    position: relative;
+}
+
+.latestSubBlock {
+    height: 420px;
+    display: flex;
+}
+
+.aboutMyLab {
+    width: 370px;
+    height: 340px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.latestHeader {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.latestIntro {
+    font-family: "Hind Regular", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.aboutMyLab .shareBtnsHolder {
+    justify-content: space-between;
+    margin: 0;
+    width: 50%;
+    bottom: 0;
+}
+
+.latestTweet {
+    width: 370px;
+    height: 340px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.tweet {
+    width: 370px;
+    padding-bottom: 30px;
+}
+
+.tweetAuthor {
+    color: #03a9f4;
+}
+
+.tweetAuthor:hover {
+    color: #ff9800;
+}
+
+.tweeterIcon {
+    font-size: 14px;
+}
+
+.tweetTime {
+    color: rgba(114, 114, 114, 0.75);
+}
+
+.latestBlog {
+    width: 370px;
+    height: 340px;
+    margin-left: 15px;
+}
+
+.blog {
+    width: 370px;
+    height: 115px;
+    padding-top: 10px;
+    display: flex;
+}
+
+.blogIcon {
+    height: 70px;
+    display: inline-block;
+    margin: 0 30px 30px 0;
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+.blogPost {
+    height: 100%;
+}
+
+.blogPost .latestIntro {
+    color: #03a9f4;
+}
+
+.blogPost .latestIntro:hover {
+    color: #ff9800;
+}
+
+.mapSubBlock {
+    height: 400px;
+    width: 1600px;
+    background-image: url(../img/CB10bg.png);
+    position: relative;
+    left: -215px;
+    padding: 60px 0 0 215px;
+}
+
+.mapInfoBlock {
+    width: 370px;
+    height: 280px;
+    padding: 40px 40px;
+    background-color: rgba(253, 253, 252, 0.85);
+    color: black;
+}
+
+.contactsHeader {
+    font-family: "Hind Semibold", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.contacts {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-template-rows: auto auto auto;
+    font-family: "Hind Regular", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contactsIcon {
+    font-size: 14px;
+}
+
+.contact {
+    padding-bottom: 30px;
+}
+
+.footerSubBlock {
+    height: 100px;
+    position: relative;
+    color: white;
+    font-family: "Hind Regular", sans-serif;
+    font-size: 14px;
+}
+
+.copyRights {
+    position: absolute;
+    top: 45px;
+}
+
+.footerMenu {
+    width: 660px;
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerTab {
+    color: white;
+}
+
+.footerTab:hover {
+    color: #ff9800;
+}
