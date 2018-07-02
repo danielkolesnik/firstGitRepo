@@ -79,8 +79,16 @@
   color: rgb(179, 229, 252);
 }
 
+.blockHeader {
+	font-family: "Hind Semibold", sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
 
 
+
+/* //////////////////////////////////// FULL PAGE WRAPER */
 .pageWrapper {
     background-color: #ffffff;
     margin-left: 150px;
@@ -330,7 +338,7 @@
 .titleSubBlock {
     height: 300px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 40px;
 }
 
@@ -534,17 +542,11 @@
     width: 1600px;
     height: 800px;
     position: relative;
-    padding: 70px 200px;
+    padding: 50px 200px;
 }
 
 .newsTitle {
     text-align: center;
-}
-
-.newsHeader {
-    font-family: "Hind Semibold", sans-serif;
-    font-size: 35px;
-    letter-spacing: 2px;
 }
 
 .newsIntro {
@@ -595,18 +597,12 @@
     width: 1600px;
     height: 800px;
     position: relative;
-    padding: 70px 200px;
+    padding: 50px 200px;
     background-color: #f0fafe;
 }
 
 .teamTitle {
     text-align: center;
-}
-
-.teamHeader {
-    font-family: "Hind Semibold", sans-serif;
-    font-size: 36px;
-    letter-spacing: 2px;
 }
 
 .teamHolder {
@@ -695,19 +691,13 @@
   width: 1600px;
   height: 800px;
   position: relative;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 /* WHITE BACKGROUND SUBBLOCK OF SKILLS BLOCK */
 .progressSubBlock {
   text-align: center;
 }
-/* NAME OF BLOCK */
-.skillsHeader {
-  font-family: "Hind Semibold", sans-serif;
-  font-size: 36px;
-  letter-spacing: 2px;
-  margin: 0;
-}
+
 /* SHORT TEXT INTRODUCTION */
 .skillsIntro {
   font-family: "Hind", sans-serif;
@@ -822,13 +812,6 @@
     text-align: center;
 }
 
-.quotesHeader {
-    font-family: "Hind Semibold", sans-serif;
-    font-size: 36px;
-    letter-spacing: 2px;
-    margin: 30px 0;
-}
-
 .quotesIntro {
     font-family: "Hind", sans-serif;
     font-size: 17px;
@@ -906,13 +889,6 @@
 
 .customersTitle {
     position: relative;
-}
-
-.customersHeader {
-    font-family: "Hind Semibold", sans-serif;
-    font-size: 36px;
-    letter-spacing: 2px;
-    margin: 30px 0;
 }
 
 .customersIntro {
